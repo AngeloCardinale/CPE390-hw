@@ -6,8 +6,8 @@ hw3setup: hw3.o cppadd128.o
 	$(CXX) hw3.o cppadd128.o -o hw3setup
 
 # the homework is to write add128.s to add two 128 bit numbers
-hw3:  hw3.o add128.s
-	$(CXX) hw3.o add128.o -o hw3  #link the two .o files together into a program
+hw3:  hw3.o add128.o
+	$(CXX) hw3.o add128.o -o hw3  #link the two .o files together into a program (10)
 hw3.o: hw3.cc
 	$(CXX) -c hw3.cc   # compile only
 	$(CXX) -S hw3.cc   # generate assembler hw1.s for you to read
